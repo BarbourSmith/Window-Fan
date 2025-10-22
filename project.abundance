@@ -1,0 +1,15 @@
+{
+    "atomType": "Molecule",
+    "name": "Window-Fan",
+    "x": 0,
+    "y": 0,
+    "uniqueID": "b9b1f37b-4924-482b-add2-6c2d2d6a1e9d",
+    "ioValues": [],
+    "topLevel": true,
+    "allAtoms": [],
+    "allConnectors": [],
+    "unitsKey": "MM",
+    "fileTypeVersion": 1,
+    "compiledBom": {},
+    "filetypeVersion": 1
+}
