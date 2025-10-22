@@ -18,8 +18,8 @@
     {
       "atomType": "Molecule",
       "name": "Fan",
-      "x": 0.1628498727735369,
-      "y": 0.9290540540540541,
+      "x": 0.15521628498727735,
+      "y": 0.7871621621621622,
       "uniqueID": "21c7167d-9a52-45ca-bcd0-10a4e173339b",
       "ioValues": [],
       "topLevel": false,
@@ -658,8 +658,8 @@
     {
       "atomType": "Molecule",
       "name": "Mount",
-      "x": 0.2340966921119593,
-      "y": 0.5878378378378378,
+      "x": 0.1628498727735369,
+      "y": 0.3952702702702703,
       "uniqueID": "9db238c7-ae7c-46f9-b830-45e16c823501",
       "ioValues": [],
       "topLevel": false,
@@ -675,8 +675,8 @@
         {
           "atomType": "Molecule",
           "name": "Center cut away",
-          "x": 0.3129770992366412,
-          "y": 0.46959459459459457,
+          "x": 0.061068702290076333,
+          "y": 0.32770270270270274,
           "uniqueID": "8731cf0c-dff1-41f8-8384-725dc595cf94",
           "ioValues": [],
           "topLevel": false,
@@ -757,8 +757,8 @@
         {
           "atomType": "GitHubMolecule",
           "name": "Rectangle-Rounded",
-          "x": 0.24427480916030533,
-          "y": 0.7601351351351351,
+          "x": 0.06361323155216285,
+          "y": 0.8277027027027026,
           "uniqueID": "54f24b3b-6155-419a-aa3b-e500b6197a0f",
           "ioValues": [
             {
@@ -1329,16 +1329,180 @@
           "unitsKey": "MM",
           "fileTypeVersion": 1,
           "compiledBom": []
+        },
+        {
+          "atomType": "Difference",
+          "name": "Difference",
+          "x": 0.3460559796437659,
+          "y": 0.5472972972972974,
+          "uniqueID": "92fc4956-f017-4dc4-bbc4-3e87a73b67ab",
+          "ioValues": []
+        },
+        {
+          "atomType": "Extrude",
+          "name": "Extrude",
+          "x": 0.5979643765903307,
+          "y": 0.7128378378378378,
+          "uniqueID": "54af1900-c90d-44dc-9dc1-5a4c22d59474",
+          "ioValues": [
+            {
+              "name": "height",
+              "ioValue": 10
+            }
+          ]
         }
       ],
-      "allConnectors": [],
+      "allConnectors": [
+        {
+          "ap1Name": "geometry or number",
+          "ap2Name": "geometry2",
+          "ap1ID": "8731cf0c-dff1-41f8-8384-725dc595cf94",
+          "ap2ID": "92fc4956-f017-4dc4-bbc4-3e87a73b67ab"
+        },
+        {
+          "ap1Name": "geometry or number",
+          "ap2Name": "geometry1",
+          "ap1ID": "54f24b3b-6155-419a-aa3b-e500b6197a0f",
+          "ap2ID": "92fc4956-f017-4dc4-bbc4-3e87a73b67ab"
+        },
+        {
+          "ap1Name": "geometry",
+          "ap2Name": "geometry",
+          "ap1ID": "92fc4956-f017-4dc4-bbc4-3e87a73b67ab",
+          "ap2ID": "54af1900-c90d-44dc-9dc1-5a4c22d59474"
+        },
+        {
+          "ap1Name": "geometry",
+          "ap2Name": "number or geometry",
+          "ap1ID": "54af1900-c90d-44dc-9dc1-5a4c22d59474",
+          "ap2ID": "004e3a31-22e7-436f-a730-696b1dcb21d6"
+        }
+      ],
       "fileTypeVersion": 1,
-      "compiledBom": {}
+      "compiledBom": []
+    },
+    {
+      "atomType": "Assembly",
+      "name": "Assembly",
+      "x": 0.6157760814249363,
+      "y": 0.30405405405405406,
+      "uniqueID": "5279a0a0-acdb-47e5-a502-2508e123b6b3",
+      "ioValues": [
+        {
+          "name": "Shape 1",
+          "ioValue": {
+            "geometry": "extrude-cut-shrinkWrap-fuse-fuse-fuse-move-circle-10--50--50-0-move-circle-10--50-50-0-move-circle-10-50--50-0-move-circle-10-50-50-0-50-intersect-rectangle-115-115-circle-63-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10",
+            "dimension": "3D",
+            "tags": [],
+            "color": "#aad7f2",
+            "plane": {
+              "origin": [
+                0,
+                0,
+                0
+              ],
+              "xDir": [
+                1,
+                0,
+                0
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ]
+            },
+            "bom": [
+              [],
+              [],
+              []
+            ]
+          }
+        },
+        {
+          "name": "Shape 2",
+          "ioValue": {
+            "geometry": "move-extrude-shrinkWrap-fuse-fuse-fuse-move-circle-10--50--50-0-move-circle-10--50-50-0-move-circle-10-50--50-0-move-circle-10-50-50-0-50-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-25-0-0--25",
+            "dimension": "3D",
+            "tags": [],
+            "color": "#5A5A5A",
+            "plane": {
+              "origin": [
+                0,
+                0,
+                0
+              ],
+              "xDir": [
+                1,
+                0,
+                0
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ]
+            },
+            "bom": [
+              [],
+              [],
+              []
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "name": "Move",
+      "x": 0.47837150127226463,
+      "y": 0.7871621621621622,
+      "uniqueID": "36d616fe-973e-485e-ab2d-23168ad1b862",
+      "ioValues": [
+        {
+          "name": "xDist",
+          "ioValue": 0
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
+          "name": "zDist",
+          "ioValue": -25,
+          "currentEquation": "-25"
+        }
+      ]
     }
   ],
-  "allConnectors": [],
+  "allConnectors": [
+    {
+      "ap1Name": "geometry or number",
+      "ap2Name": "geometry",
+      "ap1ID": "21c7167d-9a52-45ca-bcd0-10a4e173339b",
+      "ap2ID": "36d616fe-973e-485e-ab2d-23168ad1b862"
+    },
+    {
+      "ap1Name": "geometry or number",
+      "ap2Name": "Shape 1",
+      "ap1ID": "9db238c7-ae7c-46f9-b830-45e16c823501",
+      "ap2ID": "5279a0a0-acdb-47e5-a502-2508e123b6b3"
+    },
+    {
+      "ap1Name": "geometry",
+      "ap2Name": "number or geometry",
+      "ap1ID": "5279a0a0-acdb-47e5-a502-2508e123b6b3",
+      "ap2ID": "e8ba31c7-d9f5-49ca-a67d-cd7ba5904c8d"
+    },
+    {
+      "ap1Name": "geometry",
+      "ap2Name": "Shape 2",
+      "ap1ID": "36d616fe-973e-485e-ab2d-23168ad1b862",
+      "ap2ID": "5279a0a0-acdb-47e5-a502-2508e123b6b3"
+    }
+  ],
   "unitsKey": "MM",
   "fileTypeVersion": 1,
-  "compiledBom": {},
+  "compiledBom": [],
   "filetypeVersion": 1
 }
